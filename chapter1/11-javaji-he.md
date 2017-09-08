@@ -22,3 +22,15 @@ E peek();// 取队首元素，并不删除，如果为空，返回null
 
 Stack 集合的主要操作是push\(入栈\)，pop\(出栈\)，peek\(取栈顶元素\)
 
+Stack是继承了Vector ，由于Vector是**线程安全的**，Stack的所有操作都是线程安全的，其主要操作的方法都是 synchronized
+
+Queue的实现是继承了Collection,是非线程安全的 ，实现类是 LinkedList
+
+
+
+**PriorityQueue的使用**
+
+
+
+TreeSet
+
