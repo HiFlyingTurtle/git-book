@@ -133,5 +133,9 @@ Token机制相对于Cookie机制又有什么好处呢？
 
 [基于Token的WEB后台登录认证机制](http://blog.csdn.net/jack__frost/article/details/64964208)
 
-2.关于Redis 数据库的介绍和理解
+**2.关于Redis 数据库的介绍和理解**
+
+
+
+**3.Restful的理解和认识**
 
