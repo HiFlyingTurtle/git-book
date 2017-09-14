@@ -1,4 +1,4 @@
-1.基于Token实现的后台认证机制
+**1.基于Token实现的后台认证机制**
 
 几种常用的认证方式
 
@@ -25,8 +25,6 @@ Cookie认证机制就是为一次请求认证在服务端创建一个Session对�
 Cookie和Session是为了在无状态的HTTP协议之上维护会话状态，使得服务器可以知道当前是和哪个客户在打交道。
 
 Session是在服务端保存的一个数据结构，用来跟踪用户的状态，这个数据可以保存在集群、数据库、文件中；
-
-
 
 Cookie是**客户端**保存用户信息的一种机制，用来记录用户的一些信息，也是实现Session的一种方式。
 
@@ -109,7 +107,9 @@ Token机制相对于Cookie机制又有什么好处呢？
 * 生成Token的过程中可以调用第三方的JWT Lib生成签名后的JWT数据；
 * 完成JWT数据签名后，将其设置到COOKIE对象中，并重定向到首页，完成登录过程；
 
-       ![](/assets/import4.png)
+  ```
+   ![](/assets/import4.png)
+  ```
 
 请求认证
 
@@ -127,7 +127,11 @@ Token机制相对于Cookie机制又有什么好处呢？
 * 全部通过后，根据获取的用户的角色权限信息，进行对请求的资源的权限逻辑判断；
 * 如果权限逻辑判断通过则通过Response对象返回；否则则返回HTTP 401；
 
+参考资料：
 
+[基于Token的WEB后台认证机制](http://www.cnblogs.com/xiekeli/p/5607107.html)
 
+[基于Token的WEB后台登录认证机制](http://blog.csdn.net/jack__frost/article/details/64964208)
 
+2.关于Redis 数据库的介绍和理解
 
